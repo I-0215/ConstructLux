@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" type="text/css" rel="stylesheet"></link>
+<link href="slides.css" type="text/css" rel="stylesheet"></link>
+<head>
+<meta charset="UTF-8">
+<title>ConstructLux S.R.L</title>
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico"></link>
+</head>
+
+<body>
+<div class="menu">
+<a href="index.html" style="text-decoration:none; color:white; font-family:verdana"><span class="menu">Pagina principală</span></a>
+<a href="about.html" style="text-decoration:none; color:white; font-family:verdana"><span class="menu">Despre noi</span></a>
+<a href="gallery.html" style="text-decoration:none; color:white; font-family:verdana"><span class="menu">Galerie</span></a>
+<a href="employment.html" style="text-decoration:none; color:white; font-family:verdana"><span class="menu">Angajăm</span></a>
+<a href="contact.html" style="text-decoration:none; color:white; font-family:verdana"><span class="menu">Contact</span></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <h2>Bine aţi venit!</h2>
+  <p>Acesta este siteul ce reprezintă firma ConstructLux.</p>
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="slides/img1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="slides/img2.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="slides/img3.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="slides/img4.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="slides/img5.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="container">
+	<p><b>Modele de Case Premium | ConstructLux</b></p>
+	<p style="color:green">Contează cu ce construiești</p>
+	<p>În urma vastei experiețe acumulate în domeniul construcțiilor, am reușit să stabilim parteneriate cu majoritatea producătorilor consacrați de materiale de construcții la nivel național.</p>
+<br>
+<p>Astfel, chiar dacă alegi să construești cu altcineva locuința mult visată, prin intermediul programului nostru de PROMOȚII îți oferim pachete promoționale de sisteme și materiale de construcții calitative la prețurile cele mai bune pentru diferitele etape ale proiectului tău.</p>
+</div>
+<br>
+<div id="footer">
+  <p>Designed by Ervin | 
+  Contact information: <a href="mailto:arvinahmedov@gmail.com">
+  arvinahmedov@gmail.com</a></p>
+</div>
+</body>
+</html>
